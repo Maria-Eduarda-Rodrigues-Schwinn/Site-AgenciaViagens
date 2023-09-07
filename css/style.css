@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+form {
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+    --bg-color-gray: #80808029;
+    --color-purple: #5d15d1;
+}
+
+.limited-width {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+}
+
+.topo img {
+    height: 32px;
+}
+
+.topo p {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-purple);
+    margin-left: 10px;
+}
+
+.topo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.formulario {
+    background-image: url(../images/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: auto;
+
+    padding: 50px 0;
+}
+
+.formulario .area-form {
+    background-color: #fff;
+
+    height: auto;
+}
+
+.top-form {
+    width: 100%;
+    height: 35px;
+
+    color: #fff;
+    background-color: var(--color-purple);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-form img {
+    height: 20px;
+
+    transform: rotate(-45deg);
+}
+
+.top-form p {
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-left: 5px;
+}
+
+.questions-form {
+    padding: 30px 25px 20px;
+}
+
+.questions-form h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 16px;
+}
+
+form input,
+form select {
+    height: 32px;
+    width: 100%;
+
+    margin: 10px 0;
+    padding: 0 5px;
+}
+
+form .dois-campos div {
+    width: 100%;
+}
+
+.dois-campos {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.dois-campos div {
+    width: calc(50% - 10px);
+}
+
+.radio div {
+    display: flex;
+    gap: 70px;
+}
+
+.radio div div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio input{
+    width: 16px;
+}
+
+.check div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-right: 32px;
+}
+
+.check input {
+    width: 16px;
+}
+
+button {
+    width: 160px;
+    height: 32px;
+    margin: 12px 0 0;
+
+    border: none;
+    background-color: var(--color-purple);
+    color: #fff;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+span {
+    font-weight: 600;
+}
+
+main {
+    background-color: var(--bg-color-gray);
+}
+
+.ofertas,
+.anuncios {
+    width: 1024px;
+    margin: 32px auto 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section-ofertas {
+    height: 375px;
+    display: flex;
+    gap: 20px;
+}
+
+.section-lugares-1 {
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+}
+
+.section-lugares-1 .lugar {
+    height: 100%;
+}
+
+.section-lugares-2 {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-ofertas img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-lugares-2 .lugar {
+    position: relative;
+
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+}
+
+.section-ofertas .lugar p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    color: #fff;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.anuncios .cards {
+    display: flex;
+    gap: 10px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 50%;
+    height: 100%;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.card-legend {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.card-legend h4 {
+    font-size: 16px;
+}
+
+.card-legend p {
+    margin-top: 15px;
+}
+
+footer {
+    width: 100%;
+
+    background-color: var(--color-purple);
+    color: #fff;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-class {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.footer-class h5 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.container-footer {
+    display: flex;
+    margin: 5px 0;
+}
+
+.container-footer img {
+    width: 18px;
+}
+
+.footer-class span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+@media (max-width: 1100px) {
+    .limited-width {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    button {
+        width: 100%;
+    }
+
+    .section-ofertas {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .section-lugares-1,
+    .section-lugares-2 {
+        width: 100%;
+    }
+
+    .section-ofertas .lugar {
+        width: 100%;
+        height: 225px;
+
+        margin-top: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-top: 15px;
+
+        width: 100%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-class {
+        width: 250px;
+    }
+}
+
+@media (max-width: 540px) {
+    .dois-campos,
+    .radio .radio-box,
+    .check .check,
+    .check .check-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+        margin: 0;
+
+        width: 100%;
+    }
+}
